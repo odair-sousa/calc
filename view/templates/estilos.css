@@ -1,0 +1,59 @@
+body {
+  background-color: #21174C;
+  
+}
+
+  /*Modificação de tamanho e atributos*/
+.calc, .geral {
+  margin-top: 7%;
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.visor {
+  height: 100px;
+  width: 325px;
+  font-size: 3vw;
+}
+
+.zero {
+  border: none;
+  width: 164px;
+  height: 65px;
+}
+
+.btn, .num {
+  position: relative;
+  border: none;
+  width: 80px;
+  height: 65px;
+}
+
+
+button {
+  width: 80px;
+  height: 65px;
+}
+
+  /*Início da estilização das cores botão*/
+#right {
+  background-color: #FFCE71;
+}
+
+.zero, .num{
+  background-color: #410DDC;
+}
+
+.btn, #limpar {
+  background-color: #ed5269;
+}
+
+#result {
+  background-color: #18e7c8;
+}
+
+  /*Efeitos ao passar o mouse sobre o botão*/
+.btn:hover, #limpar:hover, #result:hover, .zero:hover, .num:hover{
+  background: #ffe449;
+}
+
