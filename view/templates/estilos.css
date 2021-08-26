@@ -22,7 +22,7 @@ body {
   height: 65px;
 }
 
-.btn, .num {
+.bot, .num, .zero {
   position: relative;
   border: none;
   width: 80px;
@@ -38,14 +38,6 @@ button {
   /*Início da estilização das cores botão*/
 #right {
   background-color: #FFCE71;
-}
-
-.zero, .num{
-  background-color: #410DDC;
-}
-
-.btn, #limpar {
-  background-color: #ed5269;
 }
 
 #result {

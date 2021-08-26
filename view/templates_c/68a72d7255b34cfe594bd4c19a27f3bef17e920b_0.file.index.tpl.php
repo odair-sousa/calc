@@ -1,4 +1,27 @@
-<!doctype html>
+<?php
+/* Smarty version 3.1.39, created on 2021-08-25 21:00:13
+  from '/var/www/wise/calcula/view/templates/index.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_6126d98d973ea3_72213798',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '68a72d7255b34cfe594bd4c19a27f3bef17e920b' => 
+    array (
+      0 => '/var/www/wise/calcula/view/templates/index.tpl',
+      1 => 1629936006,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_6126d98d973ea3_72213798 (Smarty_Internal_Template $_smarty_tpl) {
+?><!doctype html>
 <html lang="pt-br">
   <head>
     <!-- Required meta tags -->
@@ -6,9 +29,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="../view/templates/estilos.css"/>
-    <script src="https://kit.fontawesome.com/dbe2984bbb.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="../view/templates/script.js"></script>
+    <?php echo '<script'; ?>
+ src="https://kit.fontawesome.com/dbe2984bbb.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ type="text/javascript" src="../view/templates/script.js"><?php echo '</script'; ?>
+>
     <title>Calculadora</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -76,6 +105,9 @@
       </form>
   </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <?php echo '<script'; ?>
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"><?php echo '</script'; ?>
+>
   </body>
-</html>
+</html><?php }
+}
