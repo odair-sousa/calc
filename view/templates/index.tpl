@@ -15,23 +15,28 @@
   </head>
   <body>
     
-    <div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h5>TEste</h5> 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby"staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Histórico</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>
+                            <ul class="local-historico">
+                            {foreach $historico as $his}
+                                <li title="{$his.1}"><button class="historico"><numero>{$his.0}</numero> = {$his.2}</button></li>
+                            {/foreach}
+                            </ul>
+                        </h4> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
-  </div>
-</div>                                     
+  </div>                                    
 
   <div class="geral">
 
@@ -39,13 +44,19 @@
           <input class="visor" id="tela" type="text"/>
       </form> 
 
-      <form method="POST">
+    
       <table class="corpo">
               
           <tr id="teste" action="" method="post">
               <td><input id="borracha" class="bot btn btn-info" type="button" value="C" onclick="deleteAll()"></td>
               <td><button type="button" id="limpar" class="bot btn btn-info"><i class="fas fa-backspace"></i></button></td>
-              <td><button type="button" class="bot btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-history"></i></button></td>
+              
+              <td>
+                <button type="button" class="bot btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <i class="fas fa-history"></i>
+                </button>
+              </td>
+
               <td><input  id="dividir" class="bot btn btn-info" type="button" value="/" onclick="nume('/')"></td>
           </tr>
           <tr id="form1">

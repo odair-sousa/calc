@@ -41,11 +41,11 @@ button {
 }
 
 #result {
-  background-color: #18e7c8;
+  background-color: #8bb9dd;
 }
 
   /*Efeitos ao passar o mouse sobre o botão*/
 .btn:hover, #limpar:hover, #result:hover, .zero:hover, .num:hover{
-  background: #ffe449;
+  background: #ffe449 !important;
 }
 

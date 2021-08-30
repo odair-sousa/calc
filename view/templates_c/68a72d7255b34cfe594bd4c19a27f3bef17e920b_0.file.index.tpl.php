@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-25 21:00:13
+/* Smarty version 3.1.39, created on 2021-08-30 13:43:41
   from '/var/www/wise/calcula/view/templates/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_6126d98d973ea3_72213798',
+  'unifunc' => 'content_612d0abd7dbed0_51758999',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '68a72d7255b34cfe594bd4c19a27f3bef17e920b' => 
     array (
       0 => '/var/www/wise/calcula/view/templates/index.tpl',
-      1 => 1629936006,
+      1 => 1630341816,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6126d98d973ea3_72213798 (Smarty_Internal_Template $_smarty_tpl) {
+function content_612d0abd7dbed0_51758999 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
   <head>
@@ -44,23 +44,38 @@ function content_6126d98d973ea3_72213798 (Smarty_Internal_Template $_smarty_tpl)
   </head>
   <body>
     
-    <div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h5>TEste</h5> 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby"staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Histórico</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+        </div>
+        <div class="modal-body">
+          <h4>
+                            <ul class="local-historico">
+                            <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['historico']->value, 'his');
+$_smarty_tpl->tpl_vars['his']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['his']->value) {
+$_smarty_tpl->tpl_vars['his']->do_else = false;
+?>
+                                <li title="<?php echo $_smarty_tpl->tpl_vars['his']->value[1];?>
+"><button class="historico"><numero><?php echo $_smarty_tpl->tpl_vars['his']->value[0];?>
+</numero> = <?php echo $_smarty_tpl->tpl_vars['his']->value[2];?>
+</button></li>
+                            <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+                            </ul>
+                        </h4> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
-  </div>
-</div>                                     
+  </div>                                    
 
   <div class="geral">
 
@@ -68,13 +83,19 @@ function content_6126d98d973ea3_72213798 (Smarty_Internal_Template $_smarty_tpl)
           <input class="visor" id="tela" type="text"/>
       </form> 
 
-      <form method="POST">
+    
       <table class="corpo">
               
           <tr id="teste" action="" method="post">
               <td><input id="borracha" class="bot btn btn-info" type="button" value="C" onclick="deleteAll()"></td>
               <td><button type="button" id="limpar" class="bot btn btn-info"><i class="fas fa-backspace"></i></button></td>
-              <td><button type="button" class="bot btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-history"></i></button></td>
+              
+              <td>
+                <button type="button" class="bot btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <i class="fas fa-history"></i>
+                </button>
+              </td>
+
               <td><input  id="dividir" class="bot btn btn-info" type="button" value="/" onclick="nume('/')"></td>
           </tr>
           <tr id="form1">
