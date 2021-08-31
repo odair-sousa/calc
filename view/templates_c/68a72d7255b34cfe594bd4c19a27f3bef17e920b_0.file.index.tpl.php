@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-30 20:59:35
+/* Smarty version 3.1.39, created on 2021-08-30 21:36:08
   from '/var/www/wise/calcula/view/templates/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_612d70e7c9a682_15137891',
+  'unifunc' => 'content_612d797826de21_81133667',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '68a72d7255b34cfe594bd4c19a27f3bef17e920b' => 
     array (
       0 => '/var/www/wise/calcula/view/templates/index.tpl',
-      1 => 1630367972,
+      1 => 1630370165,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_612d70e7c9a682_15137891 (Smarty_Internal_Template $_smarty_tpl) {
+function content_612d797826de21_81133667 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
   <head>
