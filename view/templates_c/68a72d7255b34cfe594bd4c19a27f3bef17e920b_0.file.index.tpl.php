@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2021-08-30 13:43:41
+/* Smarty version 3.1.39, created on 2021-08-30 20:59:35
   from '/var/www/wise/calcula/view/templates/index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_612d0abd7dbed0_51758999',
+  'unifunc' => 'content_612d70e7c9a682_15137891',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '68a72d7255b34cfe594bd4c19a27f3bef17e920b' => 
     array (
       0 => '/var/www/wise/calcula/view/templates/index.tpl',
-      1 => 1630341816,
+      1 => 1630367972,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_612d0abd7dbed0_51758999 (Smarty_Internal_Template $_smarty_tpl) {
+function content_612d70e7c9a682_15137891 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
   <head>
@@ -53,22 +53,22 @@ function content_612d0abd7dbed0_51758999 (Smarty_Internal_Template $_smarty_tpl)
         </div>
         <div class="modal-body">
           <h4>
-                            <ul class="local-historico">
-                            <?php
+              <ul class="local-historico">
+                <?php
 $_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['historico']->value, 'his');
 $_smarty_tpl->tpl_vars['his']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['his']->value) {
 $_smarty_tpl->tpl_vars['his']->do_else = false;
 ?>
-                                <li title="<?php echo $_smarty_tpl->tpl_vars['his']->value[1];?>
-"><button class="historico"><numero><?php echo $_smarty_tpl->tpl_vars['his']->value[0];?>
+                 <li title="<?php echo $_smarty_tpl->tpl_vars['his']->value[1];?>
+"><button class="btn historico btn-info mb-2"><numero><?php echo $_smarty_tpl->tpl_vars['his']->value[0];?>
 </numero> = <?php echo $_smarty_tpl->tpl_vars['his']->value[2];?>
 </button></li>
-                            <?php
+                 <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                            </ul>
-                        </h4> 
+              </ul>
+          </h4> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>

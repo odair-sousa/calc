@@ -24,12 +24,12 @@
         </div>
         <div class="modal-body">
           <h4>
-                            <ul class="local-historico">
-                            {foreach $historico as $his}
-                                <li title="{$his.1}"><button class="historico"><numero>{$his.0}</numero> = {$his.2}</button></li>
-                            {/foreach}
-                            </ul>
-                        </h4> 
+              <ul class="local-historico">
+                {foreach $historico as $his}
+                 <li title="{$his.1}"><button class="btn historico btn-info mb-2"><numero>{$his.0}</numero> = {$his.2}</button></li>
+                 {/foreach}
+              </ul>
+          </h4> 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>

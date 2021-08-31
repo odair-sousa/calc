@@ -46,6 +46,6 @@ button {
 
   /*Efeitos ao passar o mouse sobre o botão*/
 .btn:hover, #limpar:hover, #result:hover, .zero:hover, .num:hover{
-  background: #ffe449 !important;
+  background: #77c897 !important;
 }
 

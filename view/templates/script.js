@@ -88,8 +88,8 @@ function validaTela(){
     var textoTela = $("#tela").val();
     var newTextTela = '';
     var intText = textoTela.length;
-    var arrValidos = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '+', ,'-','/','*'];
-    var arrOperadores = ['+', ,'-','/','*'];
+    var arrValidos = ['0','1', '2', '3', '4', '5', '6', '7', '8', '9', '+', ,'-','/','*','%'];
+    var arrOperadores = ['+', ,'-','/','*','%'];
     for (var i = 0; i < intText; i++) {
 
         if(arrValidos.indexOf(textoTela[i]) != -1 ){
